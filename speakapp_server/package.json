@@ -1,0 +1,29 @@
+{
+  "name": "speakapp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "googleapis": "~0.6.1",
+    "instagram-node-lib": "~0.1.1",
+    "socket.io": "~0.9.16",
+    "xmlhttprequest": "~1.6.0",
+    "node-twitchtv": "~0.0.3",
+    "jquery": "~2.1.0",
+    "forever": "~0.10.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iperry90/SpeakApp"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/iperry90/SpeakApp/issues"
+  },
+  "homepage": "https://github.com/iperry90/SpeakApp"
+}
