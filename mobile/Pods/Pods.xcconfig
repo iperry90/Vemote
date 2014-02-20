@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/JRSwizzle" "${PODS_ROOT}/Headers/ReactiveCocoa" "${PODS_ROOT}/Headers/SocketRocket" "${PODS_ROOT}/Headers/Wit" "${PODS_ROOT}/Headers/libextobjc" "${PODS_ROOT}/Headers/socket.IO"
+OTHER_CFLAGS = $(inherited) "-isystem${PODS_ROOT}/Headers" "-isystem${PODS_ROOT}/Headers/AFNetworking" "-isystem${PODS_ROOT}/Headers/JRSwizzle" "-isystem${PODS_ROOT}/Headers/ReactiveCocoa" "-isystem${PODS_ROOT}/Headers/SocketRocket" "-isystem${PODS_ROOT}/Headers/Wit" "-isystem${PODS_ROOT}/Headers/libextobjc" "-isystem${PODS_ROOT}/Headers/socket.IO"
+OTHER_LDFLAGS = -ObjC -licucore -framework AVFoundation -framework CFNetwork -framework CoreGraphics -framework Foundation -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration
+PODS_ROOT = ${SRCROOT}/Pods
