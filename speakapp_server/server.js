@@ -12,6 +12,7 @@ var express = require('express'),
 
 
 var io = require('socket.io').listen(server);
+app.use('/assets', express.static('assets'));
 
 console.log("Listening on port " + port);
 server.listen(port);
