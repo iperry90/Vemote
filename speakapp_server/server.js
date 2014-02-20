@@ -1,29 +1,25 @@
 //http://api.espn.com/:version/:resource/:method?apikey=:yourkey
+//api stuff goes up here 
 var gapi = require('googleapis');
-var fs = require('fs'); 
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 var xhr = new XMLHttpRequest();
 gapi.discover('youtube', 'v3');
-var port = 4000;
-var app = require('http').createServer(handler);
-var io = require('socket.io').listen(app);
+
+var express = require('express'),
+ 	app = express(),
+	server = require('http').createServer(app),
+	port = 4000;
+
+
+var io = require('socket.io').listen(server);
 
 console.log("Listening on port " + port);
-app.listen(port);
+server.listen(port);
 
+app.get('/', function(req, res){
+  res.sendfile(__dirname + '/v/index.html');
+});
 
-function handler (req, res) {
-	fs.readFile(__dirname + '/index.html',
-			function (err, data) {
-			if (err) {
-			res.writeHead(500);
-			return res.end('Error loading index.html');
-			}
-
-			res.writeHead(200);
-			res.end(data);
-			});
-}
 
 
 
