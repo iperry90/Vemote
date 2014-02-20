@@ -38,26 +38,7 @@ io.sockets.on('connection', function (socket) {
 			break;
 			case "resume": 
 				io.sockets.emit('resume');
-			break;
-///			case "insta": 
-///				console.log("insta data hereeeee : " + JSON.stringify(data));  
-///				xhr.open("GET", "https://api.instagram.com/v1/users/self/feed?access_token=" + data.access_token);
-//				xhr.send();
-//				feed = xhr.responseXML;
-//				console.log("this is response code "  +  xhr.status);	 //get user feed
-//				io.sockets.emit('newsfeed', feed); 
-//		 
-//			break;
- //			case "play_music":
-//				console.log(JSON.parse(data)); 
-
-			
-//			break; 
-//			case "fullscreen": 
-//				io.sockets.emit('fullscreen');
-//
-//			break; 
-			
+			break;			
 			default: -1;			 	
 			}	
 			});

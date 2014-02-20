@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head> 
+<link href="speakapp_server/assets/style.css" type="text/css" rel="stylesheet" />
+</head> 
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <script src="http://107.170.21.35:4000/socket.io/socket.io.js"></script>
-    <div id ="player"> </div> 
+    
+
+	<div class = "container"> 
+		<div id = "header"> <div id = "logo"> Vemote </div></div>			
+		<div id ="player"> </div> 
+
+	</div>
     <script>
     var tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
