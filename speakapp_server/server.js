@@ -1,4 +1,4 @@
-//http://api.espn.com/:version/:resource/:method?apikey=:yourkey
+///http://api.espn.com/:version/:resource/:method?apikey=:yourkey
 //api stuff goes up here 
 var gapi = require('googleapis');
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
@@ -17,7 +17,7 @@ console.log("Listening on port " + port);
 server.listen(port);
 
 app.get('/', function(req, res){
-  res.sendfile(__dirname + '/v/index.html');
+  res.sendfile(__dirname + '/views/index.html');
 });
 
 
